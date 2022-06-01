@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
-    <title>Ayuda a un peludo+Header</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devicewidth,initial-scale=1">
-    <link href="../style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Script de la fecha hora-->
+  <script type="text/javascript" src="/js/FechaHoraActual.js"></script>
+</head>
+<body>
+  <!--Este es el Script para la fecha y a hora-->
+  <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>    >
+
+
+    <title>Header Op</title>
 </head>
 
 <body>
+
+    <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
     <header class="header">
         <div class="container logo-nav-container">
-            <a href="../index.html" class="logo">Ayuda 1P</a>
+            <a href="/html/index.html" class="logo">AYUDA 1P</a>
+
+            <span class="menu-icon">Ver Menú</span>
             <nav class="navigation">
+                <!--  Jquery Si el ul de abajo (navigation ul Obtiene la clase show se muestra el boton menu cuando la pagina se muestra angosta)-->
                 <ul>
-                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="pagina_1.html">Gatitos</a></li>
                     <li><a href="pagina_2.html">Perritos</a></li>
                     <li><a href="pagina_3.html">Nosotros</a></li>
@@ -23,33 +42,34 @@
         </div>
     </header>
 
-    <main class="main">
+
+
+
+    <!--Súper Footer-->
+    <footer class="footer">
         <div class="container">
-    <center>
-        <h1>
-            Nombre Gato
-        </h1>
-        <p>
-            <ul>
-                <li>Nombre:Gato</li>
-                <li>Edad:x Años</li>
-                <li>Genero:x</li>
-                <li>Esterilizado:x</li>
-                <li>Nro Chip:xxxxxxx </li>
-            </ul>
+          <div class="fechaHora">
+                <h1 id="mostrarFechaHora">
+                    <script type="text/javascript">FechaHora();</script> - 
+                </h1>
+                <h1 id="HoraActual"><script type="text/javascript">showTime();</script></h1>
+              </div>
+          <p>pagina diseñada por @míger galvez</p>
+        </div>
+      </footer>
 
-        </p>
-  <img src="img/Lux1.jpg" alt="" height="360">
-    </center>
-          
-  </div>
-    </main>
+    <!--No me acuerdo para k usé este jquery,pidoperdón-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--Scrips para el jquery del botón responsive del menú-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+
 </body>
-
-<footer class="footer">
-    <div class="container">
-        <p>pagina diseñada por Míger Gálvez III</p>
-    </div>
-</footer>
 
 </html>
