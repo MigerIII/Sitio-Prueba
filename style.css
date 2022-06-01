@@ -1,0 +1,168 @@
+/* Estilos Generales del Body */
+
+body {
+
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    margin: 0 auto;
+}
+
+/* Margen y altura Titulo*/
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+/* Margen parrafo*/
+p {
+    margin-bottom: 1.6em;
+}
+
+/* Contenedor (H1 y p Simple)*/
+
+.container {
+    width: 60%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Margenes de alto y ancho del Header + colores*/
+.header {
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 2rem 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Estilos Letras dentro del Header */
+
+.header a {
+    color: rgb(251, 251, 251);
+    text-decoration: black;
+}
+
+
+/*Container de navegacion del logo*/
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Flex Wrap*/
+    flex-wrap: wrap;
+
+
+
+
+
+}
+
+/*Logo Ayuda 1P*/
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.2em;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+/*Ayuda 1P*/
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Display lista de Menú*/
+
+.navigation ul li {
+    display: inline-block;
+}
+
+/*Display del Menú*/
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 4px;
+}
+
+/*Efecto Botones del Menú */
+
+.navigation ul li a:hover {
+    background: #ccc;
+}
+
+/*Falseado espacio entre el menú*/
+.main {
+    padding-top: 12rem;
+}
+
+
+/*Footer*/
+
+.footer {
+    background: #ccc;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/*Media Query de cómo se va a visualizar el menú cuando se achica la pantallaw*/
+
+
+@media only screen and (max-width: 767px) {
+    
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;    
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .navigation ul.show{
+        display:block;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+
+
+
+    /*Display del Menú*/
+
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 4px;
+    }
+
+    /*Efecto Botones del Menú */
+
+    .navigation ul li a:hover {
+        background: #ccc;
+    }
+
+
+}
