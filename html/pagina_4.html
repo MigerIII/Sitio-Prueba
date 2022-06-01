@@ -3,67 +3,126 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/style_Form.css" rel="stylesheet">
+
+  
 
 
   <!--Script de la fecha hora-->
   <script type="text/javascript" src="/js/FechaHoraActual.js"></script>
 </head>
+
 <body>
   <!--Este es el Script para la fecha y a hora-->
-  <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-        </script>    >
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script> >
 
 
-    <title>Header Op</title>
-</head>
+  <title>Ayuda 1P</title>
+  </head>
 
-<body>
+  <body>
 
     <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
     <header class="header">
-        <div class="container logo-nav-container">
-            <a href="/html/index.html" class="logo">AYUDA 1P</a>
+      <div class="container logo-nav-container">
+        <a href="/html/index.html" class="logo">AYUDA 1P</a>
 
-            <span class="menu-icon">Ver Menú</span>
-            <nav class="navigation">
-                <!--  Jquery Si el ul de abajo (navigation ul Obtiene la clase show se muestra el boton menu cuando la pagina se muestra angosta)-->
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pagina_1.html">Gatitos</a></li>
-                    <li><a href="pagina_2.html">Perritos</a></li>
-                    <li><a href="pagina_3.html">Nosotros</a></li>
-                    <li><a href="pagina_4.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <span class="menu-icon">Ver Menú</span>
+        <nav class="navigation">
+          <!--  Jquery Si el ul de abajo (navigation ul Obtiene la clase show se muestra el boton menu cuando la pagina se muestra angosta)-->
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina_1.html">Gatitos</a></li>
+            <li><a href="pagina_2.html">Perritos</a></li>
+            <li><a href="pagina_3.html">Nosotros</a></li>
+            <li><a href="pagina_4.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <main class="main">
+      <div class="container">
+        <form action="" class="form" id="form" autocomplete="off">
+          <p class="form-titulo">Regístrate</p>
+          <div class="form-input myname">
+            <input type="text" id="myname">
+            <label for="myname">Nombre</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input surname">
+            <input type="text" id="surname">
+            <label for="surname">Apellidos</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input rut">
+            <input type="text" id="rut" name="rut" required oninput="checkRut(this)">
+            <label for="rut">Rut</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input email">
+            <input type="email" id="email">
+            <label for="email">Correo electrónico</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input mobile">
+            <input type="text" id="mobile">
+            <label for="mobile">Celular</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input password">
+            <input type="password" id="password">
+            <label for="password">Contraseña</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input repeatPassword">
+            <input type="password" id="repeatPassword">
+            <label for="repeatPassword">Repetir Contraseña</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-termsAndConditions termsAndConditions">
+            <input type="checkbox" id="termsAndConditions">
+            <label for="termsAndConditions">He leído y acepto los </label>
+            <a href="#">Términos y Condiciones</a>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-boton">
+            <input type="submit" value="Enviar">
+          </div>
+          <p class="mensajeCorrecto"></p>
 
+          
+        </form>
+        
+        
+      </div>
+    </main>
 
 
     <!--Súper Footer-->
     <footer class="footer">
-        <div class="container">
-          <div class="fechaHora">
-                <h1 id="mostrarFechaHora">
-                    <script type="text/javascript">FechaHora();</script> - 
-                </h1>
-                <h1 id="HoraActual"><script type="text/javascript">showTime();</script></h1>
-              </div>
-          <p>pagina diseñada por @míger galvez</p>
+      <div class="container">
+        <div class="fechaHora">
+          <h1 id="mostrarFechaHora">
+            <script type="text/javascript">FechaHora();</script> -
+          </h1>
+          <h1 id="HoraActual">
+            <script type="text/javascript">showTime();</script>
+          </h1>
         </div>
-      </footer>
+        <p>pagina diseñada por @míger galvez</p>
+      </div>
+    </footer>
 
     <!--No me acuerdo para k usé este jquery,pidoperdón-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
 
 
 
@@ -72,6 +131,14 @@
     <script src="/js/scripts.js"></script>
 
 
-</body>
+    <!--Script para validar algunas cosas del formulario,menos el rut-->
+    <script src="/js/form.js"></script>
+    <!--Script para validar el rut-->
+    <script src="/js/form_rut.js"></script>
+
+
+
+
+  </body>
 
 </html>
