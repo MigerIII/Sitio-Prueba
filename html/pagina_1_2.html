@@ -22,35 +22,6 @@
     <title>Ayuda 1P</title>
     </head>
 
-    <main class="main">
-        <div class="container">
-            <center>
-                <h1>
-                    Nombre Gato
-                </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum felis id nisl interdum, ac
-                    viverra
-                    elit
-                    ultrices. Cras a justo quis elit suscipit scelerisque. Nunc vel gravida leo, non porta metus.
-                    Vestibulum
-                    et
-                    bibendum magna, in cursus elit.</p>
-
-                <ul>
-                    <li>Nombre:Gato</li>
-                    <li>Edad:x Años</li>
-                    <li>Genero:x</li>
-                    <li>Esterilizado:x</li>
-                    <li>Nro Chip:xxxxxxx </li>
-                </ul>
-
-
-                <img src="/img/Tommy1.jpg" alt="Tommy" height="360">
-            </center>
-
-        </div>
-    </main>
-
     <body>
 
         <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
@@ -67,11 +38,41 @@
                         <li><a href="pagina_2.html">Perritos</a></li>
                         <li><a href="pagina_3.html">Nosotros</a></li>
                         <li><a href="pagina_4.html">Contacto</a></li>
+                        <li><button id="bdark">Modo Oscuro</button></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <!--Main Piola-->
+        <main class="main">
+            <div class="container">
+                <center>
+                    <h1>
+                        Nombre Gato
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum felis id nisl interdum, ac
+                        viverra
+                        elit
+                        ultrices. Cras a justo quis elit suscipit scelerisque. Nunc vel gravida leo, non porta metus.
+                        Vestibulum
+                        et
+                        bibendum magna, in cursus elit.</p>
+
+                    <ul>
+                        <li>Nombre:Gato</li>
+                        <li>Edad:x Años</li>
+                        <li>Genero:x</li>
+                        <li>Esterilizado:x</li>
+                        <li>Nro Chip:xxxxxxx </li>
+                    </ul>
+
+
+                    <img src="/img/Tommy1.jpg" alt="Tommy" height="360">
+                </center>
+
+            </div>
+        </main>
 
 
 
@@ -102,7 +103,15 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="/js/scripts.js"></script>
 
+        <!--Script Dark/LightMode-->
+        <script>
+            const bdark = document.querySelector('#bdark');
+            const body = document.querySelector('body');
+            bdark.addEventListener('click', e=>{
+                body.classList.toggle('darkmode');
+            });
 
+        </script>        
     </body>
 
 </html>

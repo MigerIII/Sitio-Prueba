@@ -7,7 +7,8 @@
 
 
     <!--Css del Bootstrap,para el carrusel-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
 
 
@@ -15,17 +16,17 @@
     <script type="text/javascript" src="/js/FechaHoraActual.js"></script>
 </head>
 
-<body>
+<body class>
     <!--Este es el Script para la fecha y a hora-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script> 
+        </script>
 
 
-    <title>Header Op</title>
+    <title>Ayuda 1P</title>
     </head>
 
-    <body>
+    <body class=>
 
         <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
         <header class="header">
@@ -41,6 +42,7 @@
                         <li><a href="pagina_2.html">Perritos</a></li>
                         <li><a href="pagina_3.html">Nosotros</a></li>
                         <li><a href="pagina_4.html">Contacto</a></li>
+                        <li><button id="bdark">Modo Oscuro</button></li>
                     </ul>
                 </nav>
             </div>
@@ -78,15 +80,6 @@
                     Vestibulum
                     et
                     bibendum magna, in cursus elit.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum felis id nisl interdum, ac
-                    viverra
-                    elit
-                    ultrices. Cras a justo quis elit suscipit scelerisque. Nunc vel gravida leo, non porta metus.
-                    Vestibulum
-                    et
-                    bibendum magna, in cursus elit.</p>
-
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum felis id nisl interdum, ac
                     viverra
@@ -163,7 +156,15 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="/js/scripts.js"></script>
 
+        <!--Script Dark/LightMode-->
+        <script>
+            const bdark = document.querySelector('#bdark');
+            const body = document.querySelector('body');
+            bdark.addEventListener('click', e=>{
+                body.classList.toggle('darkmode');
+            });
 
+        </script>
     </body>
 
 </html>

@@ -8,7 +8,7 @@
   <link href="/css/style.css" rel="stylesheet">
   <link href="/css/style_Form.css" rel="stylesheet">
 
-  
+
 
 
   <!--Script de la fecha hora-->
@@ -41,11 +41,13 @@
             <li><a href="pagina_2.html">Perritos</a></li>
             <li><a href="pagina_3.html">Nosotros</a></li>
             <li><a href="pagina_4.html">Contacto</a></li>
+            <li><button id="bdark">Modo Oscuro</button></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!--Main Piola-->
     <main class="main">
       <div class="container">
         <form action="" class="form" id="form" autocomplete="off">
@@ -96,10 +98,9 @@
           </div>
           <p class="mensajeCorrecto"></p>
 
-          
         </form>
-        
-        
+
+
       </div>
     </main>
 
@@ -136,7 +137,14 @@
     <!--Script para validar el rut-->
     <script src="/js/form_rut.js"></script>
 
+    <script>
+      const bdark = document.querySelector('#bdark');
+      const body = document.querySelector('body');
+      bdark.addEventListener('click', e => {
+        body.classList.toggle('darkmode');
+      });
 
+    </script>
 
 
   </body>

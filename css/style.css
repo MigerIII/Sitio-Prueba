@@ -109,6 +109,10 @@ p {
     padding-top: 10rem;
 }
 
+.carrusel{
+    align-items: center;
+}
+
 
 /*Footer*/
 
@@ -119,6 +123,13 @@ p {
     text-align: center;
     margin-top: 6rem;
 }
+
+body.darkmode{
+    background: rgb(9, 2, 63);
+    color: aliceblue;
+    
+}
+
 
 /*Media Query de cómo se va a visualizar el menú cuando se achica la pantallaw*/
 
@@ -165,6 +176,9 @@ p {
     .navigation ul li a:hover {
         background: #ccc;
     }
+
+
+
 
 
 }
