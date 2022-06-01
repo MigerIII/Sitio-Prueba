@@ -22,6 +22,7 @@ p {
 /* Contenedor (H1 y p Simple)*/
 
 .container {
+    display: flow-root;
     width: 60%;
     max-width: 850px;
     margin: 0 auto;
@@ -105,7 +106,7 @@ p {
 
 /*Falseado espacio entre el menú*/
 .main {
-    padding-top: 12rem;
+    padding-top: 10rem;
 }
 
 
@@ -113,7 +114,7 @@ p {
 
 .footer {
     background: #ccc;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-align: center;
     margin-top: 6rem;
 }

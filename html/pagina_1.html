@@ -8,45 +8,112 @@
     <link href="/css/style.css" rel="stylesheet">
 
 
-    <title>Header Op</title>
+    <!--Script de la fecha hora-->
+    <script type="text/javascript" src="/js/FechaHoraActual.js"></script>
 </head>
 
 <body>
-
-    <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
-    <header class="header">
-        <div class="container logo-nav-container">
-            <a href="/html/index.html" class="logo">AYUDA 1P</a>
-
-            <span class="menu-icon">Ver Menú</span>
-            <nav class="navigation">
-                <!--  Jquery Si el ul de abajo (navigation ul Obtiene la clase show se muestra el boton menu cuando la pagina se muestra angosta)-->
-                <ul >
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pagina_1.html">Gatitos</a></li>
-                    <li><a href="pagina_2.html">Perritos</a></li>
-                    <li><a href="pagina_3.html">Nosotros</a></li>
-                    <li><a href="pagina_4.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!--Este es el Script para la fecha y a hora-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script> >
 
 
-          
-  </div>
-    </main>
+    <title>Header Op</title>
+    </head>
 
-    
+    <body>
 
-    <footer class="footer">
-        <div class="container">
-            <p>pagina diseñada por @Míger Gálvez</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/js/scripts.js"></script>
+        <!--Header 100% Responsive + Menu media query y jquery(revisar el final de  styles.css y el jquery de scripts.js) -->
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="/html/index.html" class="logo">AYUDA 1P</a>
 
-</body>
+                <span class="menu-icon">Ver Menú</span>
+                <nav class="navigation">
+                    <!--  Jquery Si el ul de abajo (navigation ul Obtiene la clase show se muestra el boton menu cuando la pagina se muestra angosta)-->
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina_1.html">Gatitos</a></li>
+                        <li><a href="pagina_2.html">Perritos</a></li>
+                        <li><a href="pagina_3.html">Nosotros</a></li>
+                        <li><a href="pagina_4.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+
+                <h1>
+                    GATOS EN ADOPCI&Oacute;N
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Nec feugiat nisl pretium fusce. Vitae tortor condimentum lacinia quis. Sed
+                    libero enim
+                    sed faucibus turpis in eu. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+                    Nec feugiat nisl pretium fusce. Vitae tortor condimentum lacinia quis.
+                </p>
+
+                <h2>
+                    Nuestros gatos que buscan familia:
+                </h2>
+
+
+                <ol>
+                    <li>
+                        <h1><a href="pagina_1_1.html">Ginger</a></h1>
+                        <left><img src="/img/Ginger1.jpg" alt="Gatitos" title="Gatitos" width="300px" /></left>
+                    </li>
+
+                    <li>
+                        <h1><a href="pagina_1_2.html">Tommy</a></h1>
+                        <left><img src="/img/Tommy1.jpg" alt="Tommy" title="Tommy" width="300px" /></left>
+                    </li>
+
+                    <li>
+                        <h1><a href="pagina_1_3.html">Lux</a></h1>
+                        <left><img src="/img/Lux1.jpg" alt="Lux1" title="Lux1" width="300px" /></left>
+                    </li>
+
+                </ol>
+
+
+            </div>
+        </main>
+
+
+
+        <!--Súper Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="fechaHora">
+                    <h1 id="mostrarFechaHora">
+                        <script type="text/javascript">FechaHora();</script> -
+                    </h1>
+                    <h1 id="HoraActual">
+                        <script type="text/javascript">showTime();</script>
+                    </h1>
+                </div>
+                <p>pagina diseñada por @míger galvez</p>
+            </div>
+        </footer>
+
+        <!--No me acuerdo para k usé este jquery,pidoperdón-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+
+
+
+        <!--Scrips para el jquery del botón responsive del menú-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/js/scripts.js"></script>
+
+
+    </body>
 
 </html>
